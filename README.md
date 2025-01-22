@@ -1,2 +1,2 @@
-# MLOps_House_Price_Predictions_Streamlit
+# MLOps House Price Predictions Streamlit
 MLOps Assignment House Price Predictions using Streamlit
