@@ -1,0 +1,40 @@
+# Streamlit settings
+PAGE_TITLE: "House Price Prediction"
+PAGE_ICON: "static/img/home.png"
+LAYOUT: "wide"
+
+PAGE_TITLE_PROFILE: "Profile"
+PAGE_ICON_PROFILE: "static/img/profile.png"
+LAYOUT_PROFILE: "wide"
+
+# Data Configuration
+train_data_path: "artifacts/train.csv"
+test_data_path: "artifacts/test.csv"
+preprocessing_path: "models/preprocessing"
+
+# MLflow Configuration
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "house_price_prediction"
+  artifact_path: "model"
+
+model_params:
+  random_forest_regressor:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 2
+    random_state: 42
+
+  gradient_boosting_regressor:
+    n_estimators: 100
+    learning_rate: 0.1
+    max_depth: 3
+    random_state: 42
+
+columns_to_drop:
+  - "Id"
+  - "PoolQC"
+  - "MiscFeature"
+  - "Alley"
+  - "Fence"
+  - "FireplaceQu"
