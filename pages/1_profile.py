@@ -60,7 +60,8 @@ with col1:
     # Social Links
     st.markdown("""
     ### Social Links
-    - [LinkedIn](https://www.linkedin.com/in/andhika-putra-bagaskara13/)
+    - [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/andhika-putra-bagaskara13/)
+    - [![Instagram](https://img.icons8.com/color/48/000000/instagram-new--v1.png)](https://www.instagram.com/andhikaputrab/)
     """)
     
 with col2:
