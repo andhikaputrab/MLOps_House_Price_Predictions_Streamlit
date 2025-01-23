@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from src.utils.styling import load_css
 from src.utils.config import config
 import base64

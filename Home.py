@@ -1,7 +1,4 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import plotly.express as px
 from src.utils.config import config
 from src.utils.styling import load_css
 from src.utils.logger import default_logger as logger
@@ -26,7 +23,7 @@ def read_dataset():
 
 load_css()
 
-st.title("🏠 House Prediction")
+st.title("🏠 House Price Prediction")
 st.markdown("""
 **Welcome to the House Price Prediction App!**  
 

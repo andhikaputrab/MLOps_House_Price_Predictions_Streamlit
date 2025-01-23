@@ -7,10 +7,16 @@ PAGE_TITLE_PROFILE: "Profile"
 PAGE_ICON_PROFILE: "static/img/profile.png"
 LAYOUT_PROFILE: "wide"
 
+PAGE_TITLE_ANALYTICS: "Analytics"
+PAGE_ICON_ANALYTICS: "static/img/analysis.png"
+LAYOUT_ANALYTICS: "wide"
+
 # Data Configuration
 train_data_path: "artifacts/train.csv"
 test_data_path: "artifacts/test.csv"
 preprocessing_path: "models/preprocessing"
+METRICS_PATH: "artifacts/metrics.json"
+FEATURE_IMPORTANCE_PATH: "artifacts/feature_importance.json"
 
 # MLflow Configuration
 mlflow:
@@ -38,3 +44,37 @@ columns_to_drop:
   - "Alley"
   - "Fence"
   - "FireplaceQu"
+
+FEATURE_COLUMNS:
+  - "OverallQual"
+  - "YearBuilt"
+  - "YearRemodAdd"
+  - "TotalBsmtSF"
+  - "1stFlrSF"
+  - "GrLivArea"
+  - "FullBath"
+  - "TotRmsAbvGrd"
+  - "GarageCars"
+  - "GarageArea"
+  - "MSZoning"
+  - "Utilities"
+  - "BldgType"
+  - "Heating"
+  - "KitchenQual"
+  - "SaleCondition"
+  - "LandSlope"
+
+NUMERICAL_FEATURE_COLUMNS:
+  - "OverallQual"
+  - "YearBuilt"
+  - "YearRemodAdd"
+  - "TotalBsmtSF"
+  - "1stFlrSF"
+  - "GrLivArea"
+  - "FullBath"
+  - "TotRmsAbvGrd"
+  - "GarageCars"
+  - "GarageArea"
+
+TARGET_COLUMN:
+  - "SalePrice"
