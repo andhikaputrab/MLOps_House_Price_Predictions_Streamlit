@@ -61,6 +61,7 @@ with col1:
     ### Social Links
     - [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/andhika-putra-bagaskara13/)
     - [![Instagram](https://img.icons8.com/color/48/000000/instagram-new--v1.png)](https://www.instagram.com/andhikaputrab/)
+    - [![Instagram](https://img.icons8.com/color/48/000000/github.png)](https://github.com/andhikaputrab)
     """)
     
 with col2:

@@ -3,13 +3,12 @@ import pandas as pd
 import plotly.express as px
 # import statsmodels.api as sm
 import plotly.graph_objects as go
-import numpy as np
 import json
 from src.utils.config import config
 from src.utils.styling import load_css
 from src.utils.logger import default_logger as logger
 from src.data.data_loader import DataLoader
-from src.data.data_processor import DataProcessor
+# from src.data.data_processor import DataProcessor
 
 st.set_page_config(
     page_title=config.get('PAGE_TITLE_ANALYTICS'),
@@ -69,13 +68,14 @@ def load_model_artifacts():
         return None, None
 
 try:
+    # preprocessor = DataProcessor()
     df_train, df_test = read_dataset()
     # X, y = preprocessor.fit_transform(df_train)
     metrics, feature_importance = load_model_artifacts()
     
+    st.title("📊 Data Analytics & Model Performance")
     if df_train is not None:
-        st.title("📊 Data Analytics & Model Performance")
-
+        
         # Create tabs
         tab1, tab2, tab3 = st.tabs([
             "Data Analysis", 

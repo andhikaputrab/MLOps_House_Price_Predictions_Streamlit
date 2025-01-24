@@ -11,6 +11,10 @@ PAGE_TITLE_ANALYTICS: "Analytics"
 PAGE_ICON_ANALYTICS: "static/img/analysis.png"
 LAYOUT_ANALYTICS: "wide"
 
+PAGE_TITLE_PREDICTION: "Predictions"
+PAGE_ICON_PREDICTION: "static/img/prediction.png"
+LAYOUT_PREDICTION: "wide"
+
 # Data Configuration
 train_data_path: "artifacts/train.csv"
 test_data_path: "artifacts/test.csv"
